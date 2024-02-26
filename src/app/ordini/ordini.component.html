@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Panettiere</title>
+</head>
+<body>
+    <table>
+        <td>
+            <tr>
+                <h2>Prendi il numero</h2>
+            </tr>
+            <tr>{{ ultimoTicketFormattato }}</tr>
+            <tr>
+                <button type="button" (click)="staccaTicket()">🎟️</button>
+            </tr>
+        </td>
+        <td>
+            <tr>
+                <h2>Prossimo</h2>
+            </tr>
+            <tr>
+                <p *ngFor="let ticket of prossimo">
+                    {{ ticket }}
+                </p>
+            </tr>
+        </td>
+        <td>
+            <tr>
+                <h2>Chiama il prossimo</h2>
+            </tr>
+            <tr>
+                <button type="button" (click)="gestisciCoda()">📢</button>
+            </tr>
+        </td>
+    </table>
+</body>
+</html>

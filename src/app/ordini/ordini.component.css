@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+table{
+    min-height: 500px;
+}
+
+td, h2{
+    text-align: center;
+    padding: 30px;
+}
+
+tr{
+    font-size: 20px;
+    color: rgb(92, 60, 0);
+}
+
+td{
+    border-left: solid goldenrod;
+    border-right: solid goldenrod;
+}
+
+button{
+    height: 50px;
+    width: 70px;
+    background-color: #ffcd97;
+    border: dotted 2px #d8a66d;
+}
+
+button:hover{
+    background-color: #F2C18D;
+}
+
+button:active{
+    border: none;
+    background-color: #ffcd97;
+}
+
+html{
+    background-color: #F2C18D;
+    min-height: 1300px;
+}
