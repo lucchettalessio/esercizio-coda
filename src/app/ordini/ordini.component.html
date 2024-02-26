@@ -24,7 +24,7 @@
                 <h2>Prossimo</h2>
             </tr>
             <tr>
-                <p *ngFor="let ticket of prossimo">
+                <p *ngFor="let ticket of prossimo; let i = index" [ngClass]="{'pari' : (i) % 2 == 0}">
                     {{ ticket }}
                 </p>
             </tr>
